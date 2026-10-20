@@ -34,7 +34,7 @@ export HSA_OVERRIDE_GFX_VERSION=11.0.0   # RX 7600S 等需覆盖架构名
 | 6 | [ch06_optim_scheduler.md](./ch06_optim_scheduler.md) | ✅ |
 | 7 | 数据加载 | 待写 |
 | 8 | 完整训练流程 | 待写 |
-| 9 | 综合实战：MNIST（MLP + 主线 CNN） | 待写 |
+| 9 | 综合实战： | 待写 |
 | 10 | 附录：报错速查与调试 | 待写 |
 
 
