@@ -8,7 +8,7 @@
 
 ## 0. 起点：你已经会的东西
 
-你手写过线性回归（`linreg.py`），后来改成了 `linreg_nn.py`。把两者放一起看，**nn.Module 没有任何新数学**，只是整理代码：
+你手写过线性回归（`learn_pytorch_and_numpy/from_scratch/linreg.py`），后来改成了 `linreg_nn.py`。把两者放一起看，**nn.Module 没有任何新数学**，只是整理代码：
 
 | 手写版（你写过） | Module 版 | 本质 |
 |---|---|---|

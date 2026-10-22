@@ -45,7 +45,7 @@
 
 ```bash
 source ~/venvs/dl/bin/activate
-cd /home/rwr/Project/learn_pytorch_and_numpy/ex05
+cd learn_pytorch_and_numpy/ex05
 python ex1_module_basics.py
 ```
 

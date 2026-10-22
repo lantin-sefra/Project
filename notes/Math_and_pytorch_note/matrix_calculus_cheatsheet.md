@@ -8,7 +8,7 @@ last_touched_by_agent: 2026-10-04
 
 # 矩阵微分与内积读梯度 公式速查
 
-查公式用。讲解见 [[矩阵微分与用内积读梯度]]；大纲见 [[矩阵微分与内积读梯度 总结]]。
+查公式用。讲解见 [matrix_calculus_frobenius.md](./matrix_calculus_frobenius.md)。
 
 ## 微分
 

@@ -1,12 +1,11 @@
 import torch
-from helloTorch import set_seed
 
-set_seed()
+torch.manual_seed(0)
 
 n_in, n_hiden, n_out, p = 4, 5, 3, 8
 
-X = torch.randn(n_in,p) # 输入数据
-Y = torch.randn(n_out,p) # 真实值
+X = torch.randn(n_in,p)
+Y = torch.randn(n_out,p)
 
 params = {
     "W1": (torch.randn(n_hiden,n_in) * 0.5).requires_grad_(True),

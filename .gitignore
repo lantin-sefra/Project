@@ -1,1 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+~/venvs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / OS
 .vscode/
+.idea/
+.DS_Store
+*~
+
+# Torch / experiment artifacts
+runs/
+wandb/
+*.pt
+*.pth
+*.ckpt
+events.out.tfevents.*
+
+# Local env / secrets
+.env
+.env.*

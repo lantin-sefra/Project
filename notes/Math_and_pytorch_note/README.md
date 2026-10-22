@@ -34,8 +34,18 @@ export HSA_OVERRIDE_GFX_VERSION=11.0.0   # RX 7600S 等需覆盖架构名
 | 6 | [ch06_optim_scheduler.md](./ch06_optim_scheduler.md) | ✅ |
 | 7 | 数据加载 | 待写 |
 | 8 | 完整训练流程 | 待写 |
-| 9 | 综合实战： | 待写 |
+| 9 | 综合实战 | 待写 |
 | 10 | 附录：报错速查与调试 | 待写 |
+
+## 专题笔记
+
+| 文件 | 说明 |
+|------|------|
+| [matrix_calculus_frobenius.md](./matrix_calculus_frobenius.md) | 矩阵微分：用 Frobenius 内积读梯度 |
+| [matrix_calculus_cheatsheet.md](./matrix_calculus_cheatsheet.md) | 上篇公式速查 |
+| [softmax_log-likelihood.md](./softmax_log-likelihood.md) | softmax / 交叉熵 ↔ 极大似然 |
+
+配套代码：[`learn_pytorch_and_numpy/`](../../learn_pytorch_and_numpy/)（`from_scratch/` + `ex05/`）。
 
 
 ## 环境快速自检

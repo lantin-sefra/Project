@@ -8,7 +8,7 @@ last_touched_by_agent: 2026-10-04
 
 # 矩阵微分与用内积读梯度
 
-查而不背。自过这篇，再用 [[矩阵微分与内积读梯度 总结]] 当大纲核对。公式清单见 [[矩阵微分与内积读梯度 公式速查]]。
+查而不背。公式清单见 [matrix_calculus_cheatsheet.md](./matrix_calculus_cheatsheet.md)。（Obsidian 旧链：`[[矩阵微分与内积读梯度 公式速查]]`）
 
 **主线：先微分 → 分清 Frobenius（逐元素）与矩阵乘法 → 用 $\large dL=\langle G,\,dY\rangle_F$ 读梯度。**
 
