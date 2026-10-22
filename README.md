@@ -1,8 +1,8 @@
 # Project
 
-大二自学仓库：PyTorch / 深度学习基础实验 + 推导笔记。持续更新。
+一个小仓库，我目前在学习 PyTorch / 深度学习。这里面保存了我的实验和笔记。我会经常更新的。
 
-**环境**：Ubuntu 22.04 · Python 3.10 · PyTorch `2.1.2+rocm6.0`（AMD GPU，代码里仍写 `device="cuda"`）
+**环境**：Ubuntu 22.04 · Python 3.10 · PyTorch `2.1.2+rocm6.0`
 
 ```bash
 source ~/venvs/dl/bin/activate
@@ -10,16 +10,16 @@ export HSA_OVERRIDE_GFX_VERSION=11.0.0   # RX 7600S 等
 python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 ```
 
-## 建议从这里看起
+## 目前正在学：
 
-| 入口 | 说明 |
-|------|------|
-| [矩阵微分：用 Frobenius 内积读梯度](notes/Math_and_pytorch_note/matrix_calculus_frobenius.md) | 矩阵梯度推导主线 |
-| [公式速查](notes/Math_and_pytorch_note/matrix_calculus_cheatsheet.md) | 上面这篇的公式清单 |
-| [softmax ↔ 极大似然](notes/Math_and_pytorch_note/softmax_log-likelihood.md) | 交叉熵与 MLE 的对应 |
-| [手写两层网络反向传播](learn_pytorch_and_numpy/from_scratch/two_layer_backprop.py) | NumPy 实现 + 方向导数检验 |
-| [线性回归 → `nn.Module`](learn_pytorch_and_numpy/from_scratch/linreg.py) | 对照 `linreg_nn.py` |
-| [第 5 章练习（`nn.Module`）](learn_pytorch_and_numpy/ex05/) | 带 assert 的 6 个小练习 |
+| 入口                                                                                     | 说明                |
+| -------------------------------------------------------------------------------------- | ----------------- |
+| [矩阵微分：用 Frobenius 内积读梯度](notes/Math_and_pytorch_note/matrix_calculus_frobenius.md)     | 矩阵梯度推导主线          |
+| [公式速查](notes/Math_and_pytorch_note/matrix_calculus_cheatsheet.md)                      | 上面这篇的公式清单         |
+| [softmax ↔ 极大似然](notes/Math_and_pytorch_note/softmax_log-likelihood.md)                | 交叉熵与 MLE 的对应      |
+| [手写两层网络反向传播](learn_pytorch_and_numpy/from_scratch/two_layer_backprop.py)               | NumPy 实现 + 方向导数检验 |
+| [线性回归 →](learn_pytorch_and_numpy/from_scratch/linreg.py) `nn.Module`                   | 对照 `linreg_nn.py` |
+| [第 5 章练习（](learn_pytorch_and_numpy/ex05/)`nn.Module`[）](learn_pytorch_and_numpy/ex05/) | 带 assert 的 6 个小练习 |
 
 完整笔记目录见 [notes/Math_and_pytorch_note/README.md](notes/Math_and_pytorch_note/README.md)。
 
