@@ -2,15 +2,11 @@
 
 一个小仓库，我目前在学习 PyTorch / 深度学习。这里面保存了我的实验和笔记。我会经常更新的。
 
-**环境**：Ubuntu 22.04 · Python 3.10 · PyTorch `2.1.2+rocm6.0`
+**环境**：Ubuntu 22.04 · Python 3.10 · PyTorch `2.1.2+rocm6.0`  因为是AMD显卡，所以不能使用cuda，不过通过覆写设备的哈希值，我还是能够实现显卡加速。
 
-```bash
-source ~/venvs/dl/bin/activate
-export HSA_OVERRIDE_GFX_VERSION=11.0.0   # RX 7600S 等
-python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
-```
 
-## 目前正在学：
+
+目前正在学：
 
 | 入口                                                                                     | 说明                |
 | -------------------------------------------------------------------------------------- | ----------------- |
@@ -23,7 +19,7 @@ python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 
 完整笔记目录见 [notes/Math_and_pytorch_note/README.md](notes/Math_and_pytorch_note/README.md)。
 
-## 目录结构
+目录结构
 
 ```
 learn_pytorch_and_numpy/
@@ -35,8 +31,8 @@ notes/
 Numpy-100/                 # NumPy 100 题（嵌套仓库）
 ```
 
-## 运行示例
 
+可以这样运行
 ```bash
 cd learn_pytorch_and_numpy/from_scratch
 python two_layer_backprop.py
@@ -46,9 +42,9 @@ cd ../ex05
 python ex1_module_basics.py
 ```
 
-## 当前进度
+进度
 
 - [x] 矩阵微分（Frobenius）与手写反向传播
 - [x] D2L 第 1–5 章相关实验（线性模型 / MLP / `nn.Module`）
 - [x] 小型 CNN 练习
-- [ ] 强化学习（DQN → SAC），计划中
+- [ ] 强化学习（DQN → SAC）
