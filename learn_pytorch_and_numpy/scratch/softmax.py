@@ -18,14 +18,7 @@ def cross_entropy(y_hat, y):
 
 
 def grad_cross_entropy(X, y_hat, y):
-    """手算平均交叉熵对 W、b 的梯度。
-
-    单样本：∂ℓ/∂O = y_hat - y
-    batch 平均：∂L/∂O = (y_hat - y) / n
-    再链式法则：dW = Xᵀ dO，db = Σ_i dO_i
-    """
-    n = y_hat.shape[0]
-    dO = (y_hat - y) / n
+    dO = y_hat - y
     dW = X.T @ dO
     db = dO.sum(dim=0)
     return dW, db
