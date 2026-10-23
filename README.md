@@ -3,8 +3,6 @@
 一个小仓库，我目前在学习 PyTorch / 深度学习 / 强化学习。这里面保存了我的实验和笔记。我会经常更新的。
 我的环境是 Ubuntu 22.04 · Python 3.10 · PyTorch `2.1.2+rocm6.0`  因为是AMD显卡，所以不能使用cuda，不过通过覆写设备的哈希值，我还是能够实现显卡加速。小网络 RL 优先 CPU；用 GPU 前设 `export HSA_OVERRIDE_GFX_VERSION=11.0.0`。
 
-给后续 AI agent 的上下文交接：[handoff.md](handoff.md)（目标导师、学习阶梯、已否决的建议、环境约束）。
-
 
 
 目前正在学：
