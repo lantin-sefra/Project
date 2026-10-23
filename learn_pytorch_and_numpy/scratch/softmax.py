@@ -1,5 +1,5 @@
 import torch
-
+import torch.nn as nn
 
 def softmax(O):
     O_exp = torch.exp(O)
@@ -31,20 +31,16 @@ def optimizer(params, grads, lr):
             param -= lr * grad
 
 
-if __name__ == "__main__":
-    torch.manual_seed(0)
-    n, d, q = 4, 3, 2
-    X = torch.randn(n, d)
-    y = torch.tensor([[1.0, 0.0], [0.0, 1.0], [1.0, 0.0], [0.0, 1.0]])
-    W = torch.randn(d, q)
-    b = torch.zeros(q)
 
-    y_hat = softreg(X, W, b)
-    loss = cross_entropy(y_hat, y)
-    dW, db = grad_cross_entropy(X, y_hat, y)
-    optimizer([W, b], [dW, db], lr=0.5)
+class SoftmaxRegression(nn.Module):
+    def __init__(self, input_dim, output_dim):
+        super().__init__()
+        self.fc = nn.Linear(input_dim, output_dim)
+        self.criterion = nn.CrossEntropyLoss(reduction="mean")
 
-    print("loss:", float(loss))
-    print("y_hat:\n", y_hat)
-    print("dW:\n", dW)
-    print("db:", db)
+    def forward(self, X):
+        return self.fc(X)
+
+    def loss(self, logits, y):
+        return self.criterion(logits, y)
+
